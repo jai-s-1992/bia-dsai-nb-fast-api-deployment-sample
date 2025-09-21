@@ -55,7 +55,4 @@ def predict_sentiment(request: PredictionRequest):
     return {"sentiment": str(y_pred[0]), "probabilities": str(y_pred_proba[0][1])}
 
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
-
 
